@@ -1,1 +1,1 @@
-"web: gunicorn weighting.wsgi --log-file" 
+web: gunicorn weighting.wsgi --log-file -
