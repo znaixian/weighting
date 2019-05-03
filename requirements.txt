@@ -4,3 +4,4 @@ pandas==0.24.2
 xlrd==1.2.0
 gunicorn
 django-heroku
+requests
