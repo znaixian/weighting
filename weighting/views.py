@@ -4,8 +4,13 @@ import pandas as pd
 import os
 import requests
 
-def Index(request):
-    return render(request, 'weighting/index.html', {"data_list": []})
+#def Index(request):
+#    return render(request, 'weighting/index.html', {"data_list": []})
+
+def index(request):
+    r = requests.get('http://httpbin.org/status/418')
+    print(r.text)
+    return HttpResponse('<pre>' + r.text + '</pre>')
 
 def Capping(df, threshold):
     while (df.weight > threshold).any():
