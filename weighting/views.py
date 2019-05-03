@@ -2,6 +2,7 @@ from django.shortcuts import render
 import openpyxl
 import pandas as pd
 import os
+import requests
 
 def Index(request):
     return render(request, 'weighting/index.html', {"data_list": []})
